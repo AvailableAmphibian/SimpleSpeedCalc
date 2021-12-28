@@ -9,8 +9,6 @@ LEAD = 0.24
 LUSHEN_BASE_SPD = 103
 HOMUNL_BASE_SPD = 101
 JAMIRE_BASE_SPD = 113
-# Atb tick
-ATB_TICK = 0.07
 
 # =================
 
