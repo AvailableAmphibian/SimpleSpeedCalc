@@ -58,7 +58,7 @@ def calc_speed_tune(jamire_bonus_speed, use_lead, nuker_base_speed):
     return lushen_return, homunl_return
 
 
-def display_for_it(jamire_bonus_speed, use_lead, nuker_bs=LUSHEN_BASE_SPD):
+def display_needed_speed(jamire_bonus_speed, use_lead, nuker_bs=LUSHEN_BASE_SPD):
     ((lu_t, lu_rb), (ho_t, ho_rb)) = calc_speed_tune(jamire_bonus_speed, use_lead, nuker_bs)
     print("You need +" + str(ho_rb) + " speed on your light homun to reach " + str(ho_t) + " speed.")
     print("You need +" + str(lu_rb) + " speed on your Lushen to reach " + str(lu_t) + " speed.")
@@ -67,4 +67,4 @@ def display_for_it(jamire_bonus_speed, use_lead, nuker_bs=LUSHEN_BASE_SPD):
 # =================
 
 # Here we calc for a Jamire with a bonus of 200 from runes and using its lead
-display_for_it(200, True)
+display_needed_speed(200, True)
